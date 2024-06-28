@@ -1,0 +1,15 @@
+.{
+    .name = "typhoon",
+    .version = "1.0.0",
+    .paths = .{ "LICENSE", "README.md", "build.zig", "build.zig.zon" },
+    .dependencies = .{
+        .system = .{
+            .url = "https://github.com/thunderbrewhq/system/archive/refs/heads/master.zip",
+            .hash = "1220d6a6e4e2f836c1c22eb128e6c74c773ea191bfbaac02601dcb5238c2b0874182",
+        },
+        .squall = .{
+            .url = "https://github.com/thunderbrewhq/squall/archive/refs/heads/master.zip",
+            .hash = "1220295d6cc1e9256ef548850ae3a0d3e550c10eb6e8a251d9492979bf7286e5a264",
+        },
+    },
+}
