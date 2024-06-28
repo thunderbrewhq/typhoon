@@ -1,7 +1,7 @@
 .{
     .name = "typhoon",
     .version = "1.0.0",
-    .paths = .{ "LICENSE", "README.md", "build.zig", "build.zig.zon" },
+    .paths = .{ "LICENSE", "README.md", "build.zig", "build.zig.zon", "tempest" },
     .dependencies = .{
         .system = .{
             .url = "https://github.com/thunderbrewhq/system/archive/refs/heads/master.zip",
