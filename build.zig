@@ -46,6 +46,8 @@ pub fn build(b: *std.Build) void {
     .flags = &tempest_compiler_flags
   });
 
+  tempest.installHeadersDirectory(b.path("tempest"), "tempest", .{ .include_extensions = &.{"hpp"} });
+
   // TempestTest executable
   const tempest_test_exe = b.addExecutable(.{
     .name = "TempestTest",
