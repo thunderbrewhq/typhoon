@@ -19,7 +19,6 @@ pub fn build(b: *std.Build) void {
   // Get dependencies
   const squall = b.dependency("squall", .{});
   // Link storm
-  tempest.addIncludePath(squall.path("."));
   tempest.linkLibrary(squall.artifact("storm"));
 
   // Include Typhoon project directory
@@ -60,7 +59,6 @@ pub fn build(b: *std.Build) void {
   system.add_defines(tempest_test_exe);
 
   tempest_test_exe.linkLibrary(tempest);
-  tempest_test_exe.addIncludePath(squall.path("."));
   tempest_test_exe.addIncludePath(b.path("."));
 
   tempest_test_exe.addCSourceFiles(.{
