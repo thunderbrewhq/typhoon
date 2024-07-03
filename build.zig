@@ -58,7 +58,10 @@ pub fn build(b: *std.Build) void {
   // Add system detection defines
   system.add_defines(tempest_test_exe);
 
+  // Link tempest
   tempest_test_exe.linkLibrary(tempest);
+  // Link storm
+  tempest_test_exe.linkLibrary(squall.artifact("storm"));
   tempest_test_exe.addIncludePath(b.path("."));
 
   tempest_test_exe.addCSourceFiles(.{
