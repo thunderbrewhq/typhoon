@@ -2,14 +2,11 @@
     .name = "typhoon",
     .version = "1.0.0",
     .paths = .{ "LICENSE", "README.md", "build.zig", "build.zig.zon", "tempest" },
-    .dependencies = .{
-        .system = .{
-            .url = "https://github.com/thunderbrewhq/system/archive/refs/heads/master.zip",
-            .hash = "1220d6a6e4e2f836c1c22eb128e6c74c773ea191bfbaac02601dcb5238c2b0874182",
-        },
-        .squall = .{
+    .dependencies = .{ .system = .{
+        .url = "https://github.com/thunderbrewhq/system/archive/refs/heads/master.zip",
+        .hash = "1220d6a6e4e2f836c1c22eb128e6c74c773ea191bfbaac02601dcb5238c2b0874182",
+    }, .squall = .{
             .url = "https://github.com/thunderbrewhq/squall/archive/refs/heads/master.zip",
-            .hash = "12200577cef7c49c34d706346f514343d0378480cdf7cdaff4ee9e9318fc29f0168b",
-        }
-    },
+            .hash = "12203d06b0915454736d3feff49015777b5622ff9a759329eadc53e3252de4227e4e",
+        }, },
 }
